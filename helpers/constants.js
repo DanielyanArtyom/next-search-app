@@ -1,0 +1,1 @@
+export const defaultEnpodint = process.env.NEXT_PUBLIC_SEARCH_API 

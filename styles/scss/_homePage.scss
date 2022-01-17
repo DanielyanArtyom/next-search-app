@@ -1,0 +1,17 @@
+.results {
+  overflow-y: auto;
+  height: 880px;
+}
+
+.loader {
+  max-width: 150px;
+  width: 100%;
+  margin: 15px auto 0;
+}
+
+.nothing-text {
+  color: $gray-color;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+}

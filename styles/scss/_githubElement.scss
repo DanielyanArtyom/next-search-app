@@ -1,0 +1,51 @@
+.element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid $primary-color;
+  border-radius: 8px;
+  padding: 10px 20px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &__img {
+    @media (max-width: 550px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__texts {
+    &-heading {
+      margin-bottom: 10px;
+    }
+    @media (max-width: 550px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__btn {
+    &:link,
+    &:visited {
+      border: 1px solid $secondary-color;
+      padding: 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      color: $gray-color;
+    }
+
+    &:hover {
+      background-color: $secondary-color;
+      color: $white-color;
+    }
+  }
+
+  @media (max-width: 550px) {
+    flex-direction: column;
+  }
+}
